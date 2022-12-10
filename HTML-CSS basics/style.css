@@ -1,0 +1,134 @@
+/* .content{
+    color: blueviolet;
+    font-size: 20px;
+    font-weight:bold ;
+} 
+
+.bold{
+ font-weight: bold;
+}
+
+/* Class */
+/* .heading{
+    color: rgb(34, 82, 238);
+} */
+
+/* IDs */
+/* #content-id{ 
+    color: rgb(163, 103, 13);
+} */
+
+/* Universal selector */
+/* *{
+    /* font-weight: 20px; */
+    /* margin:10px;
+    padding: 10px;
+}  */
+
+/* 
+This is grouping the selector
+p,h3,h1{
+    font-weight: bold;
+    color: brown;
+
+} */
+
+/* div p{
+    color: blueviolet;
+}
+
+div li{
+    color: red;
+    font-weight: bold;
+} */
+
+
+/* here we are using class selector and tag selector */
+/* .mod li{   
+    color: blue;
+} */
+
+/* child selector */
+/* div>section{
+    color: white;
+    background-color: green;
+} */
+
+/* adjacent sibling selector
+p+p{
+    color: grey;
+} */
+
+/* general sibling selector
+p~p{
+    color: yellowgreen;
+} */
+
+.btn{
+     background-color: red;
+     font-size: 15px;
+     color:white;
+     padding: 10px;
+     border:none;
+     border-radius: 10px;
+}
+
+.btn:hover{
+    background-color:rgb(42, 165, 69);
+    color: black;
+    cursor: pointer ;
+    border: 1px solid black;
+}
+
+.item:link{
+    text-decoration: none;
+    color:rgb(214, 10, 44);
+}
+.item:visited{
+    color: green;
+}
+.item:hover{
+    color: red;
+}
+
+.item:active{
+    color: violet;
+}
+
+/* focus works on input tag */
+input:focus{
+    outline: none;
+    border: 2px solid green;
+}
+
+/* Pseudo element */
+
+/* for inseting image and placing it before and after */
+.task::after{
+
+    content: url(./images/check-mark.png) ;
+}
+
+/* for changing first letter color */
+.task::first-letter{
+    color: red;
+}
+
+/* this property  applies in first line */
+.task::first-line{
+ color:green;
+}
+
+::marker{
+    color: red;
+}
+
+/* Attribute selector */
+input[type="text"]{
+    color:red;
+    font-size: 15px;
+}
+
+a[target="_self"]{
+    background-color: yellow;
+}

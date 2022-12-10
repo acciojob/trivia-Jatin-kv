@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms: Class 2 continuing</title>
+    
+    </head>
+
+    <body>
+      <h1 style="text-align:center ;"> Registeration form </h1>
+
+      <form action="/Thankyou.html" style="text-align:center ;"> <!--Action means where the data will get saved-->
+        <label for="first name" >First Name -</label> <br>
+        <input type="text" placeholder="Enter first name only" required><br> <br>
+        <label for= "Last name"> Last name - </label>
+        <br>
+        <input type="text" placeholder = "Please enter the last name" value=""> <br><br>
+        <label for="age">Age - </label> <br>
+        <input type ="number" placeholder="Enter Age" value=""><br> <br>
+        <!-- Here we can see that in radio button the both option are getting selected because the name values are different-->
+        
+        <!-- <label for="gender">Gender - </label> <br>
+            <input type="radio" name="male">
+            <label for="male">Male</label>
+            <input type="radio" name="female">
+            <label for="female">Female</label> -->
+
+        <!-- to make the selected any one, the value of name should be same  becuase the purpose of the radio 
+                button is to select anyone option           -->
+        <label for="gender">Gender - </label> <br>
+            <input type="radio" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+
+        <label for="email">Email</label><br>
+            <input type="email" name="email"> <br><br>
+        
+        <label for="password">Password</label><br>
+            <input type="password" placeholder="enter password" name="password" style="height:40px ; width: 100px;"> <br><br>
+
+        <label for="degree">Degree:- </label><br>
+            <label for="b.tech">B.tech</label>
+                <input type="checkbox" name="b.tech" value="b.tech">
+            <label for="B.sc">B.Sc</label>
+                <input type="checkbox" name="B.sc" value="B.sc">   
+            <label for="B.com">B.com</label>
+                <input type="checkbox" name="B.com" value="B.com">  
+            <label for="other">Other</label>
+                <input type="checkbox" name="other"value="other">
+                <br><br>
+      
+            <input type="submit" value="Submitt">
+            <input type="reset" value="Resett">
+
+      </form>
+    </body>
+</html>
+

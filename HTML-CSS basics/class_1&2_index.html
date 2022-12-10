@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title> 
+            HTML Demo Page
+         </title>
+
+    </head>
+
+    <body>                                                     <!-- This is comment we can also use ctrl+ / to comment-->
+
+        <h1>  <!-- this is a h1 tag -->
+            This h1 tag   <!-- <br> is used to break the line, and this are also called empty taG (</img>, </hr> horizontal tag, </img> image tag, </input>)-->
+        </h1>
+    
+        <h2>
+            This is h2
+        </h2>
+    <h3>
+        This is h3
+    </h3>
+
+    <p> <!-- This is paragraph -->
+        Every year, World Soil Day is observed on December 5 to draw attention to the importance of healthy soil for the sustenance of life on earth. The primary objective of the day is to raise awareness about soil degradation which can cause serious environmental problems, including erosion, loss of organic matter and decline in soil fertility. 
+        The condition of soil worsens due to industrialisation or poor management of agricultural land. World Soil Day encourages people to think of sustainable ways to manage soil resources
+    </p>
+    <p>
+        Every year, World Soil Day is observed on December 5 to draw attention to the importance of healthy soil for the sustenance of life on earth. The primary objective of the day is to raise awareness about soil degradation which can cause serious environmental problems, including erosion, loss of organic matter and decline in soil fertility. 
+        The co
+    </p>
+   <!-- using image address    src is source and alt is the alternative value here we can declare what image was-->
+   
+   
+        <h2>Google logo</h2>
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" 
+                                            alt="google logo" height= "100px" width="200px">
+
+            <!-- creating link where we want to redirect -->
+        <a href="https://www.google.com/">Go to google (This is a text link) </a>    <!-- This is also known as anchor tag-->
+                <br>
+   
+   
+    
+        <h2>Nested: Putting image tag inside anchor tag</h2>
+   
+            <!--nested tag Example-->
+            <a href="https://www.google.com/">  <!--By doing this we are using image as a link or converting the image into link -->
+               <!-- This path or address is called absolute url -->
+                <img src="/images/googlelogo_color_272x92dp.png" alt="google logo" height= "120px" width="300px">
+
+            </a>   
+
+
+        <h1>
+            Class 2:
+        </h1>
+        
+        <h2>
+            1. Here we will know about the link targets: _self, _blank
+        </h2>
+
+        <a href ="https://www.google.com/" target ="_self"> This is left aligned link: it will open the link on the same tab or same page</a> 
+        <br>
+        <br>
+        <a href ="https://www.google.com/" target = "_blank"> This is blank aligned: This will open in new tab</a>
+
+
+
+        <h2>
+            2. Link the other page inside the main page i.e. internal page linking
+        </h2>
+            <p>for that we are creating new html page and linking it to the page using anchor tag, below is the reference</p>
+        
+            <a href="/newPage.html" target="_blank"> Redirecting to the new page</a>
+                  <!-- This path is called relative path ,here the base url remains same  -->
+
+
+        <!-- Image Linking and using styles attribute and color and border -->
+        <h2>3. Image Linking and using styles attribute and color and border</h2>
+            <img  src="/images/java-logo-vector-1.svg" alt="Java Logo" height="150px" width="140px" style="border:10px solid black ;">
+                     <!-- Again here the path is relative path -->
+
+        <h2>4. Inseting background image of the text</h2>
+          <h3 style="background-image: url('/images/googlelogo_color_272x92dp.png'); height: 60px; width: 60px; " >Google.com</h3>
+          <p style="background-image:url('/images/googlelogo_color_272x92dp.png');height: 150px; width: 140px;">Paragraph ackground</p>
+
+
+        <h2> 5. List </h2> 
+            <h3>Unordered List using ul tag</h3>    
+                <ul style="list-style-type:circle">  <!-- style is the attribute and the list style type is its property-->
+                    <!-- Inside Unordered we are using li tag  -->
+                    <!-- style="list-style-type:circle"  it is used to chage the type or style of listing type -->
+                    <li>HTML</li>
+                    <li>Java</li>
+                    <li>Css</li>
+                    <li>JS  </li>
+                </ul>
+
+            <h3>Ordered List using ol tag</h3>
+                 <!-- Using ol tag and inside we are using li tag to make it in order list 1,2,3 a,b,c -->
+                 <ol type="1">  <!--Using type inside the ol inside the starting tag to change the type of numbering-->
+                    <li>HTml  </li>
+                    <li> JAva </li>
+                    <li>CSS </li>
+                    <li>React</li>
+                    <li>angular</li>
+                </ol>
+
+            <h3>Nested list </h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>Java</li>
+                    <li>Css</li>
+                    <li>JS: Using nested tag</li> 
+                        <ul style="list-style-type:circle ;">
+                            <li>React JS</li>
+                            <li>Angular</li>
+                        </ul>
+               </ul>
+
+                <h3> Similarly Nested tag for ordered list</h3>
+                <ol >
+                    <li>HTML</li>
+                    <li>Java</li>
+                    <li>Css</li>
+                    <li>JS: Using nested tag</li> 
+                        <ol type="a">
+                            <li>React JS</li>
+                            <li>Angular</li>
+                            <li><a href="">Google</a></li>
+                        </ol>
+                </ol>
+                
+
+                <h3> Example of Inline elements and block elements</h3>
+                  <p style="border: 2px solid black"> This is paragraph, this is a block elements, elements that start from new line<!--Ex- li ol h hr div br  tag--></p>
+                  <span style="border: 2px solid blue ;"> this is span, as span uses the amount of space required and this is a inline elements <!--Ex- anchor span img --></span>
+                  <span style="border: 2px solid rgb(1, 1, 24) ;"> this is another span, continuing from where the previous elemrnt was stopped</span>
+
+                  <div>This is a div</div>
+                  <br>
+                  <div>This also a div </div>
+                  <div>A normal horizontal line with html</div>
+                  <hr>
+                  <div>A normal horizontal line  using css</div>
+                  <hr style="height:40px ;width: 80px; border: 2px solid blue;">
+                  
+     </body>
+</html>
